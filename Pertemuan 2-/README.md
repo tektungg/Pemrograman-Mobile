@@ -1,5 +1,6 @@
 ## Soal No. 1
 ![alt text](docs/code1.png)
+
 Output:
 ![alt text](docs/output1.png)
 
