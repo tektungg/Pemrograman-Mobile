@@ -2,6 +2,7 @@
 ![alt text](docs/code1.png)
 
 Output:
+
 ![alt text](docs/output1.png)
 
 ## Soal No. 2
