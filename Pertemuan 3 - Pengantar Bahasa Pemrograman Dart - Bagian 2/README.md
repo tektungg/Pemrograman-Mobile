@@ -28,6 +28,9 @@ if (test == "test1") {
 
 if (test == "test2") print("Test2 again");
 ```
+Output:
+
+![alt text](docs/prak1img1.png)
 ## Langkah 3
 Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
 ```
@@ -45,5 +48,8 @@ String test2 = "true";
     print("Kebenaran");
   }
 ```
+Output:
+
+![alt text](docs/prak1img2.png)
 
 
