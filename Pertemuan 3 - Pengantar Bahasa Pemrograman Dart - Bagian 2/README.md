@@ -51,8 +51,6 @@ String test2 = "true";
 Output:
 
 ![alt text](docs/prak1img2.png)
-
-
 # Praktikum 2 - Menerapkan Perulangan "while" dan "do-while"
 ## Langkah 1
 Ketik atau salin kode program berikut ke dalam fungsi ```main()```.
@@ -87,3 +85,44 @@ do {
 ```
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan do-while.
 > Tidak ada error.
+# Praktikum 3 - Menerapkan Perulangan "for" dan "break-continue"
+## Langkah 1
+Ketik atau salin kode program berikut ke dalam fungsi main().
+```
+for (Index = 10; index < 27; index) {
+  print(Index);
+}
+```
+## Langkah 2
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+> Akan terjadi error. Hal ini terjadi karena variabel index belum dideklarasikan dan, nama variabel tidak konsisten, dan juga tidak ada increment operation. Berikut kode program setelah diperbaiki:
+```
+for (int index = 10; index < 27; index++) {
+    print(index);
+}
+```
+Output:
+
+![alt text](docs/prak3img1.png)
+## Langkah 3
+Tambahkan kode program berikut di dalam for-loop, lalu coba eksekusi (Run) kode Anda.
+```
+If (Index == 21) break;
+Else If (index > 1 || index < 7) continue;
+print(index);
+```
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan for dan break-continue.
+> Akan terjadi error. Hal ini terjadi karena ada beberapa kesalahan. Pertama sintaks if else harus menggunakan lowercase. Kedua kondisi ```index > 1 || index < 7``` nilainya akan selalu true. Jika kita ingin mengecheck apakah nilai ```index``` di antara 1 dan 7, harusnya menggunakan ```index > 1 && index < 7```. Berikut kode program yang telah diperbaiki:
+```
+void main() {
+  for (int index = 10; index < 27; index++) {
+    print(index);
+    if (index == 21) break;
+    else if (index > 1 && index < 7) continue;
+    print(index);
+  }
+}
+```
+Output:
+
+![alt text](docs/prak3img2.png)
