@@ -1,6 +1,6 @@
-# Praktikum 1
+# Praktikum 1 - Menerapkan Control Flows ("if/else")
 ## Langkah 1
-Ketik atau salin kode program berikut ke dalam fungsi main().
+Ketik atau salin kode program berikut ke dalam fungsi ```main()```.
 ```String test = "test2";
 if (test == "test1") {
    print("Test1");
@@ -52,4 +52,25 @@ Output:
 
 ![alt text](docs/prak1img2.png)
 
+
+# Praktikum 2 - Menerapkan Perulangan "while" dan "do-while"
+## Langkah 1
+Ketik atau salin kode program berikut ke dalam fungsi ```main()```.
+```
+while (counter < 33) {
+  print(counter);
+  counter++;
+}
+```
+## Langkah 2
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+## Langkah 3
+Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
+```
+do {
+  print(counter);
+  counter++;
+} while (counter < 77);
+```
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan do-while.
 
