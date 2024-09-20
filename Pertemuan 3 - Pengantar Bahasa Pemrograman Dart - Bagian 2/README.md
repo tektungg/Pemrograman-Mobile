@@ -64,6 +64,19 @@ while (counter < 33) {
 ```
 ## Langkah 2
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+> Akan terjadi error. Hal ini terjadi karena counter belum dideklarasikan variabel nya. Untuk memperbaikinya tinggal kita deklarasikan dan menginisialisasikan nilai variabel counter nya terlebih dahulu. Berikut kode program yang telah direvisi:
+```
+void main() {
+  int counter = 0;
+  while (counter < 33) {
+    print(counter);
+    counter++;
+  }
+}
+```
+Output:
+
+![alt text](docs/prak2img1.png)
 ## Langkah 3
 Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
 ```
@@ -73,4 +86,4 @@ do {
 } while (counter < 77);
 ```
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan do-while.
-
+> Tidak ada error.
