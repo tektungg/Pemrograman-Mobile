@@ -1,12 +1,12 @@
 void main() {
-  String fullName = "Rama Pramudhita Bhakara";
-  String studentID = "2241720128";
+  String nama = "Rama Pramudhita Bhakara";
+  String nim = "2241720128";
 
   for (int num = 0; num <= 201; num++) {
     if (isPrime(num)) {
-      print("$num is a prime number.");
-      print("Name: $fullName");
-      print("Student ID: $studentID");
+      print("$num adalah bilangan prima.");
+      print("Nama: $nama");
+      print("NIM: $nim");
     }
   }
 }
