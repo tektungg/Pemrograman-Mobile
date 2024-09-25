@@ -399,5 +399,4 @@ print(mahasiswa2.b);
 print(mahasiswa2.$2);
 ```
 ![alt text](docs/prak5img4.png)
-
 # Tugas Praktikum
