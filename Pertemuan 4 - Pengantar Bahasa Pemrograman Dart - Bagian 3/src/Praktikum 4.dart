@@ -9,7 +9,7 @@ void main() {
   // Langkah 2
   var list1 = [1, 2, null];
   print(list1);
-  var list3 = [0, ...?list1];
+  var list3 = [0, ...list1];
   print(list3.length);
 
   // Langkah 3
@@ -18,9 +18,9 @@ void main() {
   print(list4);
 
   // Langkah 4
-  bool promoActive = false; 
+  bool promoActive = true; 
   var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
-  // print(nav);
+  print(nav);
 
   // Langkah 5
   var login = 'Staff';
