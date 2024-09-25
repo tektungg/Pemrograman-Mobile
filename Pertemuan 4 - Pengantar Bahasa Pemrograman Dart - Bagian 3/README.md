@@ -331,4 +331,73 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Jelaskan manfaat Collec
 3. Assert Statement: ```assert(listOfStrings[1] == '#1');``` memeriksa apakah elemen kedua dari `listOfStrings` benar-benar adalah `'#1'`. Jika tidak, maka akan terjadi error.
 > Collection For adalah fitur yang sangat berguna dalam Dart yang membantu kita menulis kode yang lebih bersih, efisien, dan fleksibel saat bekerja dengan koleksi. Penggunaannya dapat meningkatkan produktivitas dan mengurangi kemungkinan kesalahan dalam pengolahan data.
 # Praktikum 5 - Eksperimen Tipe Data Records
+## Langkah 1:
+Ketik atau salin kode program berikut ke dalam fungsi main().
+
+```
+var record = ('first', a: 2, b: true, 'last');
+print(record)
+```
+
+## Langkah 2:
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+> Ketika menjalankan kode ini, Dart akan mencetak record yang telah dibuat. Record adalah fitur di Dart yang memungkinkan kita untuk mengelompokkan beberapa nilai dalam satu entitas. 
+> 
+![alt text](docs/prak5img1.png)
+## Langkah 3:
+Tambahkan kode program berikut di luar scope void main(), lalu coba eksekusi (Run) kode Anda.
+
+```
+(int, int) tukar((int, int) record) {
+  var (a, b) = record;
+  return (b, a);
+}
+```
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Gunakan fungsi tukar() di dalam main() sehingga tampak jelas proses pertukaran value field di dalam Records.
+
+> Fungsi tukar akan menerima tuple (record) yang berisi dua integer, kemudian mengembalikannya dalam urutan yang terbalik.
+>
+![alt text](docs/prak5img2.png)
+
+## Langkah 4:
+Tambahkan kode program berikut di dalam scope void main(), lalu coba eksekusi (Run) kode Anda.
+```
+// Record type annotation in a variable declaration:
+(String, int) mahasiswa;
+print(mahasiswa);
+```
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Inisialisasi field nama dan NIM Anda pada variabel record mahasiswa di atas. Dokumentasikan hasilnya dan buat laporannya!
+
+> Setelah menambahkan kode ini, mahasiswa sekarang berisi nama dan NIM Anda. Kode ini akan mencetak record tersebut.
+
+Kode program:
+```
+(String, int) mahasiswa;
+  mahasiswa = ('Rama Pramudhita Bhaskara', 2241720128); 
+  print(mahasiswa);
+```
+![alt text](docs/prak5img3.png)
+## Langkah 5:
+Tambahkan kode program berikut di dalam scope void main(), lalu coba eksekusi (Run) kode Anda.
+```
+var mahasiswa2 = ('first', a: 2, b: true, 'last');
+
+print(mahasiswa2.$1); // Prints 'first'
+print(mahasiswa2.a); // Prints 2
+print(mahasiswa2.b); // Prints true
+print(mahasiswa2.$2); // Prints 'last'
+```
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Gantilah salah satu isi record dengan nama dan NIM Anda, lalu dokumentasikan hasilnya dan buat laporannya!
+> Kode ini akan mencetak elemen-elemen dari record mahasiswa2.
+
+Kode program:
+```
+mahasiswa2 = ('Rama Pramudhita Bhaskara', a: 2241720128, b: false, 'last');
+print(mahasiswa2.$1); 
+print(mahasiswa2.a); 
+print(mahasiswa2.b); 
+print(mahasiswa2.$2);
+```
+![alt text](docs/prak5img4.png)
+
 # Tugas Praktikum
