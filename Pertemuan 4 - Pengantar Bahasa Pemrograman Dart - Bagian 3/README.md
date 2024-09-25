@@ -197,5 +197,138 @@ Output:
 
 ![alt text](docs/prak3img2.png)
 # Praktikum 4 - Eksperimen Tipe Data List: Spread dan Control-flow Operators
+## Langkah 1
+Ketik atau salin kode program berikut ke dalam fungsi ```main()```.
+```
+var list = [1, 2, 3];
+var list2 = [0, ...list];
+print(list1);
+print(list2);
+print(list2.length);
+```
+## Langkah 2
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+> Akan terjadi error dikarenakan tidak ada variable yang bernama ```list1```.
+> Ketika kode sudah diperbaiki, output akan menampilkan elemen dari variable list, list2, dan panjang dari variable list2
+
+Revisi kode:
+```
+void main() {
+  var list = [1, 2, 3];
+  var list2 = [0, ...list];
+  print(list);
+  print(list2);
+  print(list2.length);
+}
+```
+Output:
+
+![alt text](docs/prak4img1.png)
+## Langkah 3
+Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
+```
+list1 = [1, 2, null];
+print(list1);
+var list3 = [0, ...?list1];
+print(list3.length);
+```
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
+> Yang terjadi adalah adanya variable ```list1``` yang dideklarasikan dengan tiga elemen: 1, 2, dan null
+> 
+> Spread Operator dengan Null-aware:
+Kode var list3 = [0, ...?list1]; menggunakan operator null-aware ...?, yang berarti jika list1 tidak null, elemen-elemen dari list1 akan ditambahkan ke list3.
+Jika list1 adalah null, maka list3 hanya akan berisi 0.
+
+Tambahkan variabel list berisi NIM Anda menggunakan Spread Operators. Dokumentasikan hasilnya dan buat laporannya!
+
+Revisi kode:
+```
+void main() {
+  var list = [1, 2, 3];
+  var list2 = [0, ...list];
+  
+  print(list);         // Memperbaiki dari list1 menjadi list
+  print(list2);
+  print(list2.length);
+
+  // Menambahkan kode berikut
+  var list1 = [1, 2, null];
+  print(list1);
+  var list3 = [0, ...?list1];
+  print(list3.length);
+
+  // Menambahkan NIM menggunakan Spread Operator
+  var nim = [2241720128];
+  var list4 = [...list, ...nim]; // Menggabungkan list dengan NIM
+  print(list4);
+}
+```
+Output:
+
+![alt text](docs/prak4img2.png)
+## Langkah 4
+Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
+```
+var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
+print(nav);
+```
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Tunjukkan hasilnya jika variabel promoActive ketika ```true``` dan ```false```.
+
+Revisi kode:
+```
+bool promoActive = true; 
+  var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
+  print(nav);
+```
+Output true:
+
+![alt text](docs/prak4img3.png)
+
+Output false:
+
+![alt text](docs/prak4img4.png)
+
+## Langkah 5
+Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
+```
+var nav2 = ['Home', 'Furniture', 'Plants', if (login case 'Manager') 'Inventory'];
+print(nav2);
+```
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Tunjukkan hasilnya jika variabel login mempunyai kondisi lain.
+> Error karena tidak ada variable login
+
+Revisi kode:
+```
+var login = 'Manager';
+  var nav2 = ['Home', 'Furniture', 'Plants', if (login case 'Manager') 'Inventory'];
+  print(nav2);
+```
+Output login Manager:
+
+![alt text](docs/prak4img5.png)
+
+Output login lain:
+
+![alt text](docs/prak4img4.png)
+
+## Langkah 6
+Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
+```
+var listOfInts = [1, 2, 3];
+var listOfStrings = ['#0', for (var i in listOfInts) '#$i'];
+assert(listOfStrings[1] == '#1');
+print(listOfStrings);
+```
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Jelaskan manfaat Collection For dan dokumentasikan hasilnya.
+
+> Apa yang Terjadi?
+1. List ```lis1tOfInts```: Dideklarasikan dengan tiga elemen: ```1```, `2`, dan `3`.
+
+2. List ```listOfStrings```: Menggunakan for-loop untuk membuat string baru dari setiap elemen dalam ```listOfInts```.
+* ```'#$i'``` akan menghasilkan string dengan format ```#1```, ```#2```, dan `#3`.
+* Jadi ```listOfStrings``` akan berisi: ```['#0', '#1', '#2', '#3']```.
+
+3. Assert Statement: ```assert(listOfStrings[1] == '#1');``` memeriksa apakah elemen kedua dari `listOfStrings` benar-benar adalah `'#1'`. Jika tidak, maka akan terjadi error.
+> Collection For adalah fitur yang sangat berguna dalam Dart yang membantu kita menulis kode yang lebih bersih, efisien, dan fleksibel saat bekerja dengan koleksi. Penggunaannya dapat meningkatkan produktivitas dan mengurangi kemungkinan kesalahan dalam pengolahan data.
 # Praktikum 5 - Eksperimen Tipe Data Records
 # Tugas Praktikum
