@@ -110,6 +110,92 @@ Output:
 
 ![alt text](docs/prak2img1.png)
 # Praktikum 3 - Eksperimen Tipe Data Maps
+## Langkah 1
+Ketik atau salin kode program berikut ke dalam fungsi main().
+```
+var gifts = {
+  // Key:    Value
+  'first': 'partridge',
+  'second': 'turtledoves',
+  'fifth': 1
+};
+
+var nobleGases = {
+  2: 'helium',
+  10: 'neon',
+  18: 2,
+};
+
+print(gifts);
+print(nobleGases);
+```
+## Langkah 2
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+![alt text](docs/prak3img1.png)
+> Dalam Dart, maps adalah koleksi pasangan key-value.gifts dan nobleGases adalah dua map yang didefinisikan.
+> gifts memiliki key bertipe String dan value bertipe campuran (String dan int).
+> nobleGases memiliki key bertipe int dan value yang juga bisa berupa String dan int.
+## Langkah 3
+Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
+```
+var mhs1 = Map<String, String>();
+gifts['first'] = 'partridge';
+gifts['second'] = 'turtledoves';
+gifts['fifth'] = 'golden rings';
+
+var mhs2 = Map<int, String>();
+nobleGases[2] = 'helium';
+nobleGases[10] = 'neon';
+nobleGases[18] = 'argon';
+```
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
+
+Tambahkan elemen nama dan NIM Anda pada tiap variabel di atas (gifts, nobleGases, mhs1, dan mhs2). Dokumentasikan hasilnya dan buat laporannya!
+
+Revisi kode:
+```
+void main() {
+  var gifts = {
+    // Key:    Value
+    'first': 'partridge',
+    'second': 'turtledoves',
+    'fifth': 1
+  };
+
+  var nobleGases = {
+    2: 'helium',
+    10: 'neon',
+    18: 2,
+  };
+
+  // print(gifts);
+  // print(nobleGases);
+
+  var mhs1 = Map<String, String>();
+  gifts['first'] = 'partridge';
+  gifts['second'] = 'turtledoves';
+  gifts['fifth'] = 'golden rings';
+
+  var mhs2 = Map<int, String>();
+  nobleGases[2] = 'helium';
+  nobleGases[10] = 'neon';
+  nobleGases[18] = 'argon';
+
+  // Menambahkan elemen nama dan NIM
+  mhs1['nama'] = 'Rama Pramduhita Bhaskara'; // Contoh nama
+  mhs1['nim'] = '2241720128'; // Contoh NIM
+  mhs2[1] = 'Rama Pramduhita Bhaskara'; // Contoh nama untuk mhs2
+  mhs2[2] = '2241720128'; // Contoh NIM untuk mhs2
+
+  print(gifts);
+  print(nobleGases);
+  print(mhs1);
+  print(mhs2);
+}
+```
+Output:
+
+![alt text](docs/prak3img2.png)
 # Praktikum 4 - Eksperimen Tipe Data List: Spread dan Control-flow Operators
 # Praktikum 5 - Eksperimen Tipe Data Records
 # Tugas Praktikum
